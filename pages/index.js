@@ -27,6 +27,7 @@ import Alert from "../components/Alert";
 import Toast from "../components/Toast";
 import FormComponent from "../components/FormComponent";
 import Accordion from "../components/Accordion";
+import BlogPostWithImage from "../components/BlogPostWithImage";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -162,6 +163,8 @@ export default function Home() {
       </Flex>
       <Divider orientation='horizontal' my={4} />
       <Accordion />
+      <Divider orientation='horizontal' my={4} />
+      <BlogPostWithImage />
       <Divider orientation='horizontal' my={4} />
       <AlertDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
