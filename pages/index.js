@@ -28,6 +28,9 @@ import Toast from "../components/Toast";
 import FormComponent from "../components/FormComponent";
 import Accordion from "../components/Accordion";
 import BlogPostWithImage from "../components/BlogPostWithImage";
+import CardWithIllustration from "../components/CardWithIllustration";
+import GoogleButton from "../components/GoogleButton";
+import GridListWithHeading from "../components/GridListWithHeading";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +41,6 @@ export default function Home() {
         <title>Create Chakra UI Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <Heading>H2 heading</Heading>
       <Text>Main Content Here</Text>
       <Button colorScheme='red' onClick={() => setIsOpen(true)}>
@@ -165,6 +167,12 @@ export default function Home() {
       <Accordion />
       <Divider orientation='horizontal' my={4} />
       <BlogPostWithImage />
+      <Divider orientation='horizontal' my={4} />
+      <CardWithIllustration />
+      <Divider orientation='horizontal' my={4} />
+      <GoogleButton />
+      <Divider orientation='horizontal' my={4} />
+      <GridListWithHeading />
       <Divider orientation='horizontal' my={4} />
       <AlertDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
