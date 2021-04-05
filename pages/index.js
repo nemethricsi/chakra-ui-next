@@ -31,6 +31,7 @@ import BlogPostWithImage from "../components/BlogPostWithImage";
 import CardWithIllustration from "../components/CardWithIllustration";
 import GoogleButton from "../components/GoogleButton";
 import GridListWithHeading from "../components/GridListWithHeading";
+import CtaWithIllustration from "../components/CtaWithIllustration.tsx";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +42,8 @@ export default function Home() {
         <title>Create Chakra UI Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <CtaWithIllustration />
+      <GridListWithHeading />
       <Heading>H2 heading</Heading>
       <Text>Main Content Here</Text>
       <Button colorScheme='red' onClick={() => setIsOpen(true)}>
@@ -101,6 +104,8 @@ export default function Home() {
           />
         </WrapItem>
       </Wrap>
+      <Divider orientation='horizontal' my={4} />
+      <GoogleButton />
       <Divider orientation='horizontal' my={4} />
       <Heading as='h3' size='lg'>
         Links
@@ -170,10 +175,7 @@ export default function Home() {
       <Divider orientation='horizontal' my={4} />
       <CardWithIllustration />
       <Divider orientation='horizontal' my={4} />
-      <GoogleButton />
-      <Divider orientation='horizontal' my={4} />
-      <GridListWithHeading />
-      <Divider orientation='horizontal' my={4} />
+
       <AlertDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
