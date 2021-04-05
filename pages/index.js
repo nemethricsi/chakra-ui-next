@@ -32,6 +32,7 @@ import CardWithIllustration from "../components/CardWithIllustration";
 import GoogleButton from "../components/GoogleButton";
 import GridListWithHeading from "../components/GridListWithHeading";
 import CtaWithIllustration from "../components/CtaWithIllustration.tsx";
+import Pricing from "../components/Pricing.tsx";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -172,6 +173,8 @@ export default function Home() {
       <Accordion />
       <Divider orientation='horizontal' my={4} />
       <BlogPostWithImage />
+      <Divider orientation='horizontal' my={4} />
+      <Pricing />
       <Divider orientation='horizontal' my={4} />
       <CardWithIllustration />
       <Divider orientation='horizontal' my={4} />
